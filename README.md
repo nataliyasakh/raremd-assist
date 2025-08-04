@@ -32,7 +32,8 @@ Computational phenotype analysis platform that matches patient symptoms to rare 
     ├── useAuth.ts          # Authentication state management
     ├── lib/                # Utility functions and configurations
     ├── translations.ts     # Multi-language support
-    └── queryClient.ts      # API request configuration```
+    └── queryClient.ts      # API request configuration
+```
 
 ## License
 
