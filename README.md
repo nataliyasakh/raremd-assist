@@ -16,22 +16,23 @@ Computational phenotype analysis platform that matches patient symptoms to rare 
 - **Clinical Decision Support** with treatment recommendations
 
 ## Technical Architecture
-client/src/
-    ├── components/            # Reusable UI components
-    ├── ui/                    # shadcn/ui base components
-    ├── header.tsx             # Main navigation header
-    ├── secondary-nav.tsx      # Collapsible sidebar navigation
-    ├── pages/                 # Route-based page components
-    ├── dashboard.tsx          # Main clinical interface
-    ├── analytics.tsx          # System metrics and charts
-    ├── settings.tsx           # User preferences and configuration
-    ├── knowledge-base.tsx     # Disease information browser
-    ├── hooks/                 # Custom React hooks
-    ├── useSettings.ts         # Settings persistence and state
-    ├── useAuth.ts             # Authentication state management
-    ├── lib/                   # Utility functions and configurations
-    ├── translations.ts        # Multi-language support
-    └── queryClient.ts         # API request configuration
+```client/
+└── src/
+    ├── components/         # Reusable UI components
+    ├── ui/                 # shadcn/ui base components
+    ├── header.tsx          # Main navigation header
+    ├── secondary-nav.tsx   # Collapsible sidebar navigation
+    ├── pages/              # Route-based page components
+    ├── dashboard.tsx       # Main clinical interface
+    ├── analytics.tsx       # System metrics and charts
+    ├── settings.tsx        # User preferences and configuration
+    ├── knowledge-base.tsx  # Disease information browser
+    ├── hooks/              # Custom React hooks
+    ├── useSettings.ts      # Settings persistence and state
+    ├── useAuth.ts          # Authentication state management
+    ├── lib/                # Utility functions and configurations
+    ├── translations.ts     # Multi-language support
+    └── queryClient.ts      # API request configuration```
 
 ## License
 
