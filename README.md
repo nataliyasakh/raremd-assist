@@ -1,1 +1,1 @@
-# raremd-assist
+# RareMD Assist
