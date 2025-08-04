@@ -1,0 +1,42 @@
+{
+  "version": "1.2.0",
+  "name": "RareMD Assist",
+  "description": "Clinical Decision Support System for Rare Genetic Diseases",
+  "build": "2025.01.28",
+  "features": [
+    "Multi-language Support (EN, ES, FR, DE)",
+    "Dark/Light Theme Switching", 
+    "Comprehensive Analytics Dashboard",
+    "Functional Settings Management",
+    "FHIR R4 EHR Integration",
+    "Clinical Decision Support System",
+    "HPO Symptom Standardization",
+    "Orphadata Disease Database",
+    "Real-time Data Visualization"
+  ],
+  "changelog": {
+    "1.2.0": [
+      "Added fully functional settings with language switching",
+      "Implemented working dark mode with theme persistence",
+      "Created comprehensive analytics dashboard with charts",
+      "Added compact header design with version display",
+      "Reorganized navigation with secondary nav bar",
+      "Added multi-language translation system",
+      "Improved mobile responsive design"
+    ],
+    "1.1.0": [
+      "Integrated Clinical Decision Support System",
+      "Added FHIR R4 EHR compatibility",
+      "Implemented drug interaction checking",
+      "Added clinical pathway guidance",
+      "Enhanced photo analysis capabilities"
+    ],
+    "1.0.0": [
+      "Initial release with HPO integration",
+      "Orphadata rare disease database",
+      "Basic symptom analysis and ranking",
+      "PDF report generation",
+      "Physician profile management"
+    ]
+  }
+}
