@@ -16,23 +16,61 @@ Computational phenotype analysis platform that matches patient symptoms to rare 
 - **Clinical Decision Support** with treatment recommendations
 
 ## Technical Architecture
-```client/
-└── src/
-    ├── components/         # Reusable UI components
-    ├── ui/                 # shadcn/ui base components
-    ├── header.tsx          # Main navigation header
-    ├── secondary-nav.tsx   # Collapsible sidebar navigation
-    ├── pages/              # Route-based page components
-    ├── dashboard.tsx       # Main clinical interface
-    ├── analytics.tsx       # System metrics and charts
-    ├── settings.tsx        # User preferences and configuration
-    ├── knowledge-base.tsx  # Disease information browser
-    ├── hooks/              # Custom React hooks
-    ├── useSettings.ts      # Settings persistence and state
-    ├── useAuth.ts          # Authentication state management
-    ├── lib/                # Utility functions and configurations
-    ├── translations.ts     # Multi-language support
-    └── queryClient.ts      # API request configuration
+```
+raremd-assist/
+├── client/                          # Frontend React application
+│   ├── src/
+│   │   ├── components/              # Reusable UI components
+│   │   │   ├── ui/                  # shadcn/ui base components
+│   │   │   ├── dashboard-stats.tsx  # Dashboard statistics display
+│   │   │   ├── disease-ranking.tsx  # Disease probability ranking
+│   │   │   ├── knowledge-base.tsx   # Disease information browser
+│   │   │   ├── photo-analysis.tsx   # AI photo analysis interface
+│   │   │   ├── quick-actions.tsx    # Quick diagnostic actions
+│   │   │   ├── recent-cases.tsx     # Recent patient cases
+│   │   │   └── symptom-entry.tsx    # Symptom input interface
+│   │   ├── hooks/                   # Custom React hooks
+│   │   │   ├── use-mobile.tsx       # Mobile device detection
+│   │   │   └── use-toast.ts         # Toast notification management
+│   │   ├── lib/                     # Utility functions and configurations
+│   │   │   ├── queryClient.ts       # API request configuration
+│   │   │   ├── scoring.ts           # Disease scoring algorithms
+│   │   │   └── utils.ts             # General utility functions
+│   │   ├── pages/                   # Route-based page components
+│   │   │   ├── dashboard.tsx        # Main clinical interface
+│   │   │   ├── knowledge-base.tsx   # Disease information browser
+│   │   │   ├── not-found.tsx        # 404 error page
+│   │   │   ├── physician-profile.tsx # User profile management
+│   │   │   └── test-cases.tsx       # Clinical test cases
+│   │   ├── App.tsx                  # Main application component
+│   │   ├── index.css                # Global styles
+│   │   └── main.tsx                 # Application entry point
+│   └── index.html                   # HTML template
+├── server/                          # Backend API server
+│   ├── services/                    # Business logic services
+│   │   ├── comprehensive-diseases-generator.ts # Disease data generation
+│   │   ├── expanded-diseases.ts     # Extended disease information
+│   │   ├── hpo.ts                   # Human Phenotype Ontology integration
+│   │   ├── orphadata.ts             # Orphanet database integration
+│   │   ├── pdf.ts                   # PDF report generation
+│   │   ├── photo-analysis.ts        # AI photo analysis service
+│   │   └── test-cases.ts            # Clinical test case management
+│   ├── db.ts                        # Database configuration
+│   ├── index.ts                     # Server entry point
+│   ├── routes.ts                    # API route definitions
+│   ├── storage.ts                   # File storage management
+│   └── vite.ts                      # Vite development server
+├── shared/                          # Shared type definitions
+│   └── schema.ts                    # TypeScript schemas and interfaces
+├── components.json                  # shadcn/ui configuration
+├── drizzle.config.ts                # Database ORM configuration
+├── package.json                     # Project dependencies
+├── postcss.config.js                # PostCSS configuration
+├── tailwind.config.ts               # Tailwind CSS configuration
+├── tsconfig.json                    # TypeScript configuration
+├── version.json                     # Version information
+└── vite.config.ts                   # Vite build configuration
+
 ```
 
 ## License
