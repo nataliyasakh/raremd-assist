@@ -15,23 +15,23 @@ Computational phenotype analysis platform that matches patient symptoms to rare 
 - **Gene Panel Recommendations** via PubCaseFinder API
 - **Clinical Decision Support** with treatment recommendations
 
-## Technical Architecture
+## Repository structure
 ```
 raremd-assist/
-├── client/                          # Frontend React application
+├── client/                          # Frontend on React
 │   ├── src/
-│   │   ├── components/              # Reusable UI components
+│   │   ├── components/              # UI components
 │   │   │   ├── ui/                  # shadcn/ui base components
-│   │   │   ├── dashboard-stats.tsx  # Dashboard statistics display
-│   │   │   ├── disease-ranking.tsx  # Disease probability ranking
-│   │   │   ├── knowledge-base.tsx   # Disease information browser
+│   │   │   ├── dashboard-stats.tsx  
+│   │   │   ├── disease-ranking.tsx  
+│   │   │   ├── knowledge-base.tsx   
 │   │   │   ├── photo-analysis.tsx   # AI photo analysis interface
-│   │   │   ├── quick-actions.tsx    # Quick diagnostic actions
+│   │   │   ├── quick-actions.tsx    
 │   │   │   ├── recent-cases.tsx     # Recent patient cases
 │   │   │   └── symptom-entry.tsx    # Symptom input interface
-│   │   ├── hooks/                   # Custom React hooks
+│   │   ├── hooks/                   # React hooks
 │   │   │   ├── use-mobile.tsx       # Mobile device detection
-│   │   │   └── use-toast.ts         # Toast notification management
+│   │   │   └── use-toast.ts         # Notification management
 │   │   ├── lib/                     # Utility functions and configurations
 │   │   │   ├── queryClient.ts       # API request configuration
 │   │   │   ├── scoring.ts           # Disease scoring algorithms
@@ -68,7 +68,7 @@ raremd-assist/
 ├── postcss.config.js                # PostCSS configuration
 ├── tailwind.config.ts               # Tailwind CSS configuration
 ├── tsconfig.json                    # TypeScript configuration
-├── version.json                     # Version information
+├── version.json                     
 └── vite.config.ts                   # Vite build configuration
 
 ```
